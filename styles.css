@@ -1,0 +1,267 @@
+@CHARSET "ISO-8859-1";
+
+table, body, html
+{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+html
+{
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.fullscreen *, .fullscreen_
+{
+	display: block;
+	position: absolute;
+    top: 0;
+    left: 0;
+	
+
+	
+	height: 100%;
+	width: 100%;
+}
+
+.invisible
+{
+	display: none;
+}
+
+.questionscreen
+{
+	width: 100%;
+	height: 100%;
+	background-image: url('images/questionbackground.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.questionscreen > *
+{
+	position:relative;
+	display: block;
+	float: left;
+}
+
+.questionscreen .lplaceholder
+{
+	/*border: 1px blue solid;*/
+	width: 7.34375%;
+	height: 100%;
+}
+
+.questionscreen .tplaceholder
+{
+/*	border: 1px green solid;*/
+	width: 85.46875%;
+	height: 55%;
+}
+
+.questionscreen .progressBar
+{
+    display: block;
+    height: 67%;
+    left: 0;
+    margin: 13.7% 0 0 81.4%;
+    position: absolute;
+    top: 0;
+    width: 14.6%;
+}
+
+.questionscreen .progressBar img
+{
+	width: 35%;
+	text-align: middle;
+}
+
+.questionscreen .joker
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.questionscreen #joker5050
+{
+	width: 13.2%;
+	height: 17%;
+	margin: 13.5% 0 0 3.5%;
+	border: 1px transparent solid;
+}
+
+.questionscreen #jokertelephone
+{
+	width: 13.2%;
+	height: 17%;
+	margin: 23.9% 0 0 3.5%;
+	border: 1px transparent solid;
+}
+
+.questionscreen #jokeraudience
+{
+	width: 13.2%;
+	height: 17%;
+	margin: 34.6% 0 0 3.5%;
+	border: 1px transparent solid;
+}
+
+.questionscreen .jokertelephone-active
+{
+	background-image: url('images/telephone-active.png');
+}
+
+.questionscreen .joker5050-active
+{
+	background-image: url('images/5050-active.png');
+}
+
+.questionscreen .jokeraudience-active
+{
+	background-image: url('images/audience-active.png');
+}
+
+.questionscreen .jokertelephone-used
+{
+	background-image: url('images/telephone-strokeout.png');
+}
+
+.questionscreen .joker5050-used
+{
+	background-image: url('images/5050-strokeout.png');
+}
+
+.questionscreen .jokeraudience-used
+{
+	background-image: url('images/audience-strokeout.png');
+}
+
+.questionscreen .questionbar
+{
+	display: block;
+	width: 85.46875%;
+	height: 12.5%;
+	background-image: url('images/questionbar.gif');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	margin-bottom: 2%;
+}
+
+.questionscreen .answerblock
+{
+	display: block;
+	width: 85.46875%;
+	height: 15%;	
+}
+
+.questionscreen .answertable
+{
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.questionscreen .answer, .questionscreen .questionbar
+{
+	font-weight: bold;
+	font-family: sans-serif;
+	color: white;
+}
+
+.questionscreen .answer
+{
+	width: 45%;
+	height: 50%;
+	background-image: url('images/questionbar.gif');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	
+	text-align: left;
+	
+	line-height: 100%;
+	font-size: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.questionscreen .answer-hidden
+{
+	background-image: url('images/questionbar-reverse.gif') !important;
+}
+
+.questionscreen .answer-hidden .answertext
+{
+	display: none !important;
+}
+
+.questionscreen .answerYellow
+{
+	background-image: url('images/questionbar-yellow.png');
+	color: black;
+}
+
+.questionscreen .answerGreenBlue
+{
+	background-image: url('images/questionbar-green-blue.gif');
+	color: black;
+}
+
+.questionscreen .answerFadeout, .questionscreen .questionFadeout
+{
+	background-image: url('images/questionbar-reverse.gif');
+}
+
+.questionscreen .answertext
+{
+	/*border: 1px solid green;*/
+	text-align: left;
+	
+	/*line-height: 100%;*/
+	font-size: 60%;
+	vertical-align: middle;
+	margin: 0 7% 0 7%;
+	line-height: 110%;
+}
+
+.questionscreen .questionbar
+{
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.questionscreen .questiontext
+{
+	text-align: center;
+	
+	/*line-height: 100%;*/
+	font-size: 40%;
+	vertical-align: middle;
+	margin: 0 7% 0 7%;
+}
+
+/* http://zipline-media.de/2012/03/tutorial-fixed-aspect-ratio-von-div-container-mit-css/ */
+.ar_container {
+ 			display: inline-block;
+ 			position: relative;
+ 			width: 100%;
+}
+
+.ar_dummy {
+ 			margin-top: 75%;
+}
+
+.ar_content {
+ 			position: absolute;
+ 			top: 0;
+ 			bottom: 0;
+ 			left: 0;
+ 			right: 0;
+}
