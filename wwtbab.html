@@ -1,14 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<title>Wer wird Bräutigam?</title>
-		
-		<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Qui veut gagner des petits requins ?</title>
+
+		<script type="text/javascript" src="jquery-2.0.1.min.js"></script>
 		<script type="text/javascript" src="questions.js"></script>
 		<script type="text/javascript" src="scripts.js"></script>
 		<script type="text/javascript" src="FitText/jquery.fittext.js"></script>
-		
+
 		<link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
 	</head>
 <body>
@@ -17,26 +17,27 @@
 		<div class="ar_content">
 
 			<div id="clickToStart" class="fullscreen">
-				<a href="#">Hier klicken um zu beginnen!</a>
+				<a href="#">Cliquer ici pour commencer!</a>
 			</div>
+
 
 			<div id="introvideo" class="invisible fullscreen">
 				<video>
 				  <source src="videos/gameintro.webm" type="video/webm" />
 				</video>
 			</div>
-			
+
 			<div id="titlescreen" class="invisible fullscreen">
 				<img src="images/titlescreen.png" />
 			</div>
-			
+
 			<div id="transition_studio_screen" class="invisible fullscreen">
 				<img src="images/studio.png" />
 				<video class="invisible">
 				  <source src="videos/Esc1X.webm" type="video/webm" />
 				</video>
 			</div>
-			
+
 			<div id="questionscreen" class="invisible fullscreen_">
 				<div class="questionscreen">
 					<div class="lplaceholder"></div>
@@ -45,7 +46,7 @@
 						<div id="joker5050" class="joker"></div>
 						<div id="jokertelephone" class="joker"></div>
 						<div id="jokeraudience" class="joker"></div>
-						
+
 						<div id="barOnTheRight" class="progressBar">
 							<!--
 							<img src="images/heart.png" />
@@ -63,7 +64,7 @@
 							-->
 						</div>
 					</div>
-					
+
 					<!-- Questionbar -->
 					<div id="questionbar" class="questionbar" style="display: table;"><div style="display: table-cell; vertical-align: middle; text-align: center;"><div class="questiontext">bla</div></div></div>
 					<div class="answerblock">
@@ -81,13 +82,13 @@
 					</div>
 				</div>
 			</div>
-			
-			<div id="proofscreen" class="invisible fullscreen_">
+
+			<div id="proofscreen" class="invisible fullscreen_" style="background-color: rgb(85, 87, 83); background-color: rgba(85, 87, 83, 0.8);">
 				<div style="text-align:center;">
-					<img id="proofimg" style="max-width: 100%; margin-left:auto; margin-right:auto;" />
+					<img id="proofimg" style="height: 300px; margin-top:5%; margin-bottom: auto; margin-left:auto; margin-right:auto;" />
 				</div>
 			</div>
-			
+
 			<div id="finalscreen" class="invisible fullscreen">
 				<img src="images/finalscreen.png" />
 			</div>
